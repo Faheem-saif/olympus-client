@@ -50,7 +50,7 @@ const Routes = () => {
 const routesForNotAuthenticatedOnly = [
     {
         path: "/",
-        element: <ProtectedRoute />, // Wrap the component in ProtectedRoute
+        element: <RedirectedIfAuthenticated/>, // Wrap the component in ProtectedRoute
         children: [
             {
             path: "/login",

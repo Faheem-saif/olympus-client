@@ -6,7 +6,7 @@ export const RedirectedIfAuthenticated = () => {
     // Check if the user is authenticated
     if (token) {
       // If not authenticated, redirect to the login page
-      return <Navigate to="/" />;
+      return <Navigate to="/dashboard" />;
     }
   
     // If authenticated, render the child routes
